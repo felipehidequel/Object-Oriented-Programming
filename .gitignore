@@ -20,3 +20,6 @@ target/
 .project
 .settings/
 bin/
+
+.pdf
+.code-workspace
