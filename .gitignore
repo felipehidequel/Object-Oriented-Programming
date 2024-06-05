@@ -21,5 +21,5 @@ target/
 .settings/
 bin/
 
-.pdf
-.code-workspace
+*.pdf
+*.code-workspace
