@@ -9,5 +9,6 @@ public class ConvertCelsiu {
 
         double fah = (tempCelsiu * 1.8) + 32;
         System.out.println(tempCelsiu + "°C - " + fah + "°F");
+        sc.close();
     }
 }

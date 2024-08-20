@@ -14,6 +14,6 @@ public class Fatorial {
             num--;
             fat=1;
         }while(num >= 0);
-
+        sc.close();
     }
 }

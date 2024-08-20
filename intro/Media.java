@@ -13,9 +13,11 @@ public class Media {
         n3 = sc.nextDouble();
 
         System.out.println("A média é: " + media(n1, n2, n3));
+        sc.close();
     }
 
     public static double media(double n1, double n2, double n3) {
         return (n1 + n2 + n3) / 3;
     }
+
 }
