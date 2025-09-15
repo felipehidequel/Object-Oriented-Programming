@@ -1,24 +1,34 @@
 package matriz;
 
+import java.util.Random;
+
 public class Matriz {
     private int x, y;
     private float[][] matriz;
 
-    Matriz(int x, int y) {
-        this.x = x;
-        this.y = y;
+    Matriz() {
+        this.x = 2;
+        this.y = 2;
+        Random rand = new Random();
 
         matriz = new float[x][y];
-    }
-
-    public float calculaDeterminante(){
-        float result;
-        
-        for(int i = 0, i<x*y; i++){
-            result *= matriz[i][i];
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                matriz[i][j] = rand.nextInt(9);
+            }
         }
-
-        return result;
     }
 
+    public float calculaDeterminante() {
+        return (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0]);
+    }
+
+    public void imprimir() {
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 }

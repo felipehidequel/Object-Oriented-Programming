@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DemoCompositePassword {
     public static void main(String[] args) {
         CompositePasswordValidator validator = new CompositePasswordValidator(new LenghthValidator(8),
-                new UppercaseValidator(), new SpecialCharacterValidator());
+                new UppercaseValidator(), new SpecialCharacterValidator(), new NumberValidator());
 
         Scanner sc = new Scanner(System.in);
         String password;
